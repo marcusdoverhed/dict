@@ -48,14 +48,18 @@ for x in commands:
 while True: ## REPL - Read Execute Program Loop
     cmd = input("Command: ")
     if cmd == "list":
+        print(" Here is the list")
         print(read_dict(conn))
     elif cmd == "add":
         name = input("  Word: ")
         phone = input("  Translation: ")
         add_word(conn, name, phone)
+        print(f" Added word {name}")
     elif cmd == "delete":
         ID = input("  ID: ")
         delete_word(conn, ID)
+        print(f" deleted word {ID}")
     elif cmd == "quit":
         save_dict(conn)
+        print(" GOODBYE ")
         exit()
