@@ -28,7 +28,7 @@ commands = [
 
      '\n',
 
-    ' ADD:      Add a name to the list',
+    ' ADD:      Add a name to the, list',
 
     ' LIST:     Print the list of names',
 
